@@ -15,6 +15,7 @@ The following links will be updated to reflect available notes and solutions for
 8. Markov Chains
 9. Large Deviations and the Law of the Iterated Logarithm 
 
+
 **Chapter 2- Measure**
 10. General Measures
 11. Outer Measure
@@ -22,7 +23,9 @@ The following links will be updated to reflect available notes and solutions for
 13. Measurable Functions and Mappings
 14. Distribution Functions
 
+
 **Chapter 3 - Integration**
+
 
 **Chapter 4 - Random Variables and Expected Values**
 
