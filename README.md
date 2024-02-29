@@ -5,6 +5,8 @@ The following links will be updated to reflect available notes and solutions for
 
 
 **Chapter 1 - Probability**
+
+
 [1. Borel's Normal Number Theorem](https://github.com/Top-Maths/prob-and-meas/blob/49376c019624d8dd6c7fe8adbb5ad6ea8f448530/ch1/s1%20solutions)
 
 2. Probability Measures
