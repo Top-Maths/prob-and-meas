@@ -6,14 +6,22 @@ The following links will be updated to reflect available notes and solutions for
 
 **Chapter 1 - Probability**
 [1. Borel's Normal Number Theorem](https://github.com/Top-Maths/prob-and-meas/blob/49376c019624d8dd6c7fe8adbb5ad6ea8f448530/ch1/s1%20solutions)
+
 2. Probability Measures
-3. Existence and Extension
-4. Denumerable Probabilties
-5. Simple Random Variables
-6. The Law of Large Numbers
-7. Gambling Systems
-8. Markov Chains
-9. Large Deviations and the Law of the Iterated Logarithm 
+
+4. Existence and Extension
+   
+6. Denumerable Probabilties
+   
+8. Simple Random Variables
+   
+10. The Law of Large Numbers
+    
+12. Gambling Systems
+    
+14. Markov Chains
+    
+16. Large Deviations and the Law of the Iterated Logarithm 
 
 
 **Chapter 2- Measure**
