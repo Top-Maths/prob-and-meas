@@ -1,1 +1,23 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage[margin = 0.5in]{geometry}
+\usepackage{newtxtext, newtxmath, physics}
+\usepackage{graphicx} 
+\usepackage{bm}
 
+\title{Probability and Measure \\ Section 1 Problems}
+\date{\today}
+
+\begin{document}
+\maketitle 
+\noindent \textbf{Problem 1.1} ~
+    \begin{itemize}
+        \item[(a)] Show that the discrete probability space cannot contain an infinite sequence $A_1, A_2, \dots$ of independent events of probability $\frac{1}{2}$. 
+
+        \item[(b)] Suppose that $0 \leq p_n \leq 1$, and put $\alpha_n = \min\{p_n, 1 - p_n\}$. Show that, if $\sum_n \alpha_n$ diverges, then no discrete probability space can contain independent events $A_1, A_2, \dots$ such that $A_n$ has probability $p_n$.
+    \end{itemize}
+
+
+
+\end{document}
