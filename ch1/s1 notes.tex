@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{newtxtext}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\theoremstyle{definition}
+\usepackage{datetime}
+\title{Probability and Measure \\ Section 1. Borel's Normal Number Theorem}
+
+\date{Last Updated: \today}
+\author{Top Maths, mjachi, p1186, cedardrawers}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{observation}{Observation}
+
+
+\begin{document}
+	\maketitle 
+	\paragraph{The Unit Interval}
+		\begin{definition}[Preliminary Notation] ~
+			\begin{itemize}
+				\item $\Omega = (0, 1]$ denotes the unit interval.
+				
+				\item $\omega$ denotes a generic point of $\Omega$. 
+				
+				\item The \textbf{\textit{length}} of an interval $I = (a, b]$ is given by $$|I| = |(a, b]| = b - a.$$ 
+				
+				\item If $$A = \bigcup_{i = 1}^n I_i = \bigcup_{i = 1}^n (a_i, b_i]$$ where the intervals $I_i$ are disjoint, then assign to $A$ the \textbf{\textit{probability}} $$P(A) = \sum_{i = 1}^n |I_i| = \sum_{i = 1}^n (b_i - a_i)$$ which is defined only if $A$ is a finite disjoint union of subintervals of $(0, 1]$. $P$ is disjointly additive over such sets. If $A$ and $B$ are disjoint and of this form, then $$P(A \cup B) = P(A) + P(B).$$
+ 			\end{itemize}
+		\end{definition}
+		
+		\begin{definition}[Dyadic Expansion]
+			To each $\omega \in \Omega$, associate its \textit{nonterminating} dyadic expansion (binary representation) $$\omega = \sum_{n = 1}^\infty \frac{d_n(\omega)}{2^n} = .d_1(\omega)d_2(\omega)\dots,$$ where each $d_n(\omega)$ is either 0 or 1. Thus, $(d_1(\omega), d_2(\omega), \dots)$ is a sequence of binary digits in the expansion of $\omega$. 
+		\end{definition} 
+		
+		\begin{observation}[Probability of $n$-consecutive desired coin flips]
+			Let $u_1, u_2, \dots, u_n$ be a sequence of 0's and 1's. Then,  $$P[\omega : d_i(\omega) = u_i, i = 1, 2, \dots, n] = \frac{1}{2^n}.$$
+		\end{observation}
+		
+		\begin{definition}[Dyadic Intervals]
+			A dyadic interval are those whose endpoints are adjacent dyadic rationals $$\frac{k}{2^n}, \qquad \frac{(k + 1)}{2^n}$$ where $n$ denotes the \textbf{\textit{rank}} or \textbf{\textit{order}} of the interval. 
+		\end{definition}
+		
+		\begin{observation}[Probability of $k$ heads in $n$ coin tosses ]
+			Let $n$ be a positive integer, and $0 \leq k \leq n$. Then, $$P\left[\omega : \sum_{i = 1}^n d_i(\omega) = k\right] = \binom{n}{k} \frac{1}{2^n}.$$
+		\end{observation}
+	\paragraph{The Weak Law of Large Numbers}
+		\begin{theorem}[Weak Law of Large Numbers]
+			For any $\varepsilon > 0$, $$\boxed{\lim_{n \to \infty} P \left[\omega : \left|\frac{1}{2} \sum_{i = 1}^n d_i(\omega) - \frac{1}{2}\right| \geq \varepsilon \right]} = 0.$$ That is, if $n$ is large, then there is a small probability that the fraction or relative frequency of heads in $n$ tosses will deviate much from $\frac{1}{2}$. 
+		\end{theorem}
+		
+		\begin{lemma}
+			If $f$ is a nonnegative step function, then $[\omega : f(\omega) \geq \alpha]$ is for all $\alpha > 0$ a finite union of intervals and $$P[\omega : f(\omega) \geq \alpha] \leq \frac{1}{\alpha} \int_0^1 f(\omega) \ d \omega.$$
+		\end{lemma} 
+	\paragraph{The Strong Law of Large Numbers}
+		\begin{definition}[Normal Numbers]
+			A \textbf{\textit{normal number}} is an element of the set $$N = \left[\omega : \lim_{n \to \infty} \frac{1}{n} \sum_{i = 1}^n d_i(\omega) = \frac{1}{2}\right]$$
+		\end{definition}
+		\begin{definition}[Negligible Sets]
+			A subset $A$ of $\Omega$ is \textbf{\textit{negligible}} if for all $\varepsilon > 0$ there exists a finite or countable collection $I_1, I_2, \dots$ of intervals (that may overlap) such that $$A \subset \bigcup_k I_k \qquad \text{and} \qquad \sum_k |I_k| < \varepsilon.$$
+		\end{definition}
+		
+		It follows the finite or countable union of negligible sets is negligible. A finite or countable set is always negligible. 
+		
+		\begin{theorem}[Borel's Normal Number Theorem]
+			The set of normal numbers has negligible complement. 
+		\end{theorem}
+	\paragraph{Strong Law Versus Weak}
+	
+	\paragraph{Length}
+	
+	\paragraph{The Measure Theory of Diophantine Approximation}
+\end{document}
