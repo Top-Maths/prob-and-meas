@@ -1,13 +1,33 @@
 \documentclass[12pt]{article}
 
-
-\usepackage{newtxtext, newtxmath}
 \usepackage{amsmath, amssymb, amsthm}
-
+\usepackage{mathptmx}
+\usepackage{datetime}
 \title{Probability and Measure \\ Section 1. Borel's Normal Number Theorem}
+
+\date{Last Updated: \today}
+\author{Top Maths, mjachi, p1186, cedardrawers}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{definition}
+
 \begin{document}
+	\maketitle 
 	\paragraph{The Unit Interval}
-	
+		\begin{definition} ~
+			\begin{itemize}
+				\item $\Omega = (0, 1]$ denotes the unit interval.
+				
+				\item $\omega$ denotes a generic point of $\Omega$. 
+				
+				\item The \textbf{\textit{length}} of an interval $I = (a, b]$ is given by $$|I| = |(a, b]| = b - a.$$ 
+				
+				\item If $$A = \bigcup_{i = 1}^n I_i = \bigcup_{i = 1}^n (a_i, b_i]$$ where the intervals $I_i$ are disjoint, then assign to $A$ the \textbf{\textit{probability}} $$P(A) = \sum_{i = 1}^n |I_i| = \sum_{i = 1}^n (b_i - a_i).$$
+ 			\end{itemize}
+		\end{definition}
 	\paragraph{The Weak Law of Large Numbers}
 	
 	\paragraph{The Strong Law of Large Numbers}
