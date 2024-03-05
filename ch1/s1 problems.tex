@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage{newtxtext}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\theoremstyle{definition}
+\usepackage{datetime}
+\title{Probability and Measure \\ Section 1 Problems}
+
+\date{Last Updated: \today}
+\author{Top Maths, mjachi, p1186, cedardrawers}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{observation}{Observation}
+
+
+\begin{document}
+	\maketitle 
+
+\noindent \textbf{1.1.} ~
+\begin{itemize}
+	\item[(\textbf{a})] Show that a \textit{discrete} probability space cannot contain an infinite sequence $A_1, A_2, \dots$ of independent events each of probability $\frac{1}{2}$. Since $A_n$ could be identified with heads on the $n$th toss of a coin, the existence of such a sequence would make this section superfluous. 
+	
+	\item[(\textbf{b})] Suppose that $0 \leq p_n \leq 1$ and put $\alpha_n = \min \{p_n, 1 - p_n\}$. Show that, if $\sum_n \alpha_n$ diverges, then no discrete probability space can contain independent events $A_1, A_2, \dots$ such that $A_n$ has probability $p_n$. 
+\end{itemize} 	 
+	\begin{proof} Let $\Omega$ be an at most countable sample space, so that probabilities are assigned to points by the probability mass function $P: \Omega \to [0, 1]$ where $P$ satisfies $$\sum_{\omega \in \Omega} P(\omega) = 1.$$ Here, for $A \subseteq \Omega$, $$P(A) = \sum_{\omega \in A} P(\omega).$$
+		\begin{itemize}
+			\item[(\textbf{a})] Let $A_1, A_2, \dots \subseteq \Omega$ be independent events of probability $\frac{1}{2}$. We can partition $\Omega$ into four sets: $$\Omega = \left(A_1 \cap A_2\right) \cup \left(A_1 \cap A_2^c\right) \cup \left(A_1^c \cap A_2\right) \cup \left(A_1^c \cap A_2^c\right).$$ Consequently, each $\omega \in \Omega$ has probability bounded as follows: $$P(\omega) \leq \frac{1}{4}.$$ To see why, suppose for contradiction that $P(\omega) > \frac{1}{4}$, and without loss of generality let $\omega \in A_1$. Then, since $A_1, A_2$ are independent events so that $P(A_1 \cap A_2) = P(A_1) P(A_2)$, 
+				\begin{align*}
+					P\left[\left(A_1 \cap A_2\right) \cup \left(A_1 \cap A_2^c\right)\right] &= P(A_1 \cap A_2) + P(A_1 \cap A_2^c) - P(A_1 \cap A_2 \cap A_1 \cap A_2^c) \\
+					&= P(A_1)P(A_2) + P(A_1)P(A_2^c)
+				\end{align*}
+			
+			\item[(\textbf{b})]
+		\end{itemize}
+	\end{proof}
+\end{document}
